@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    
+    */
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+   
+    .grid-container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px ;
+      gap: 9px;
+
+    }
+    .grid-cell{
+      background-color:#F0F1EC ;
+    }
+    .grid-cell-red {
+      background-color:#E72F24 ;
+    }
+    div.grid-cell.two {
+      grid-column: 2/span 3;
+    }
+    div.grid-cell.three {
+      grid-row: 2/span 2;
+      grid-column: 2/span 2;
+    }
+    div.grid-cell.four {
+      grid-row: 2/span 2;
+    }
+    div.grid-cell.blue {
+      background-color: #004592;
+      margin-bottom: 20px;
+    }
+    div.grid-cell.yellow {
+      background-color: #F9D01E;
+     
+    }
+    div.grid-cell.black {
+      background-color: black;
+     
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-cell-red"></div>
+    <div class="grid-cell two"></div>
+    <div class="grid-cell four"></div>
+    <div class="grid-cell three"></div>
+    <div class="grid-cell blue"></div>
+    <div class="grid-cell"></div>
+    <div class="grid-cell"></div>
+    <div class="grid-cell yellow"></div>
+    <div class="grid-cell black"></div>
+
+  </div>
+</body>
+
+</html>
